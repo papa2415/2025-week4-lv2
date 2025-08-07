@@ -5,13 +5,13 @@
   background-repeat: no-repeat;
   text-align: center;
   padding: 151px 0;
-}
-
-@media screen and (max-width: 767px) {
-  .banner {
+  @include mobile {
     background-image: url(/assets/images/hero-sm.png);
     padding: 87px 0;
   }
+}
+
+@include mobile {
   .brand-story span {
     padding-top: 8px;
     display: block;
@@ -20,9 +20,7 @@
 .BlockQuote {
   background-color: #f5fee7;
   border-radius: 12px;
-}
-@media screen and (max-width: 767px) {
-  .BlockQuote {
+  @include mobile {
     text-align: left;
   }
 }

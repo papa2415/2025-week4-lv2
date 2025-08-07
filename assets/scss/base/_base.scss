@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+i {
+  display: inline-block;
+  line-height: 1;
+  font-size: 24px;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #212529;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+a:hover {
+  color: #57a203;
+}

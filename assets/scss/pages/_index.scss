@@ -15,9 +15,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 289px 0 288px 10.41666%;
-}
-@media screen and (max-width: 767px) {
-  .banner-index {
+  @include mobile {
     background-image: url(/assets/images/banner-sm.png);
     padding: 155px 24px;
   }
@@ -41,11 +39,7 @@
     font-size: 14px;
     background-color: #f5fee7;
     color: #57a203;
-  }
-}
-@media screen and (max-width: 767px) {
-  .product {
-    .product-text {
+    @include mobile {
       left: 8px;
     }
   }
@@ -57,29 +51,27 @@
   background-repeat: no-repeat;
   padding: 100px 0;
   position: relative;
+  @include mobile {
+    padding: 64px 0;
+    background-image: url(/assets/images/banner-co-branded-sm.png);
+    overflow: hidden;
+  }
   .star {
     position: absolute;
     width: 48px;
     top: 68px;
     left: calc(50% - 397px);
+    @include mobile {
+      top: 32px;
+      left: -20px;
+    }
   }
   .sparkle {
     position: absolute;
     width: 76px;
     bottom: 132px;
     right: calc(50% - 357px);
-  }
-}
-@media screen and (max-width: 767px) {
-  .banner-index-2 {
-    padding: 64px 0;
-    background-image: url(/assets/images/banner-co-branded-sm.png);
-    overflow: hidden;
-    .star {
-      top: 32px;
-      left: -20px;
-    }
-    .sparkle {
+    @include mobile {
       bottom: 104px;
       right: -28px;
     }
@@ -107,24 +99,7 @@
   flex-wrap: wrap;
   margin-left: -4px;
   margin-right: -4px;
-}
-.inspiration-col-4 {
-  width: 33.33333%;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-.inspiration-col-6 {
-  width: 50%;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-.inspiration-col-12 {
-  width: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-@media screen and (max-width: 767px) {
-  .inspiration-row {
+  @include mobile {
     flex-wrap: nowrap;
     margin-left: -8px;
     margin-right: -8px;
@@ -132,9 +107,32 @@
       min-width: 300px;
     }
   }
-  .inspiration-col-4,
-  .inspiration-col-6,
-  .inspiration-col-12 {
+}
+.inspiration-col-4 {
+  width: 33.33333%;
+  padding-left: 4px;
+  padding-right: 4px;
+  @include mobile {
+    width: unset;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.inspiration-col-6 {
+  width: 50%;
+  padding-left: 4px;
+  padding-right: 4px;
+  @include mobile {
+    width: unset;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.inspiration-col-12 {
+  width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  @include mobile {
     width: unset;
     padding-left: 8px;
     padding-right: 8px;

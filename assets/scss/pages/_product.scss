@@ -28,9 +28,7 @@
 }
 .card li:last-child {
   display: none;
-}
-@media screen and (max-width: 767px) {
-  .card li:last-child {
+  @include mobile {
     display: block;
   }
 }
@@ -40,7 +38,7 @@
   padding-right: 12px;
   margin-bottom: 48px;
 }
-@media screen and (max-width: 767px) {
+@include mobile {
   .col-card-2-mobile {
     width: 50%;
     padding-left: 6px;

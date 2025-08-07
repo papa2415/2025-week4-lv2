@@ -9,17 +9,15 @@
   padding-left: 4px;
   padding-right: 4px;
   margin-bottom: 8px;
+  @include mobile {
+    width: 100%;
+    display: none;
+  }
 }
 .card-m {
   display: none;
-}
-@media screen and (max-width: 767px) {
-  .card-m {
+  @include mobile {
     display: block;
-  }
-  .col-card-6 {
-    width: 100%;
-    display: none;
   }
 }
 .list li::after {
@@ -32,21 +30,16 @@
 
 .shoes-color li {
   max-width: 12.2%;
-}
-@media screen and (max-width: 767px) {
-  .shoes-color li {
+  @include mobile {
     max-width: 18.23362%;
   }
 }
-
 .shoes-size a {
   background-color: #ffffff;
   width: 30%;
   padding: 12px 24px;
   border: 1px solid #dee2e6;
-}
-@media screen and (max-width: 767px) {
-  .shoes-size a {
+  @include mobile {
     width: 45.584%;
   }
 }
@@ -63,15 +56,13 @@
   width: 49%;
   border: 1px solid #212529;
   padding: 12px 24px;
+  @include mobile {
+    display: none;
+  }
 }
 .like:hover {
   background-color: #212529;
   color: #ffffff;
-}
-@media screen and (max-width: 767px) {
-  .like {
-    display: none;
-  }
 }
 .like i {
   font-size: 20px;
@@ -82,9 +73,7 @@
   padding: 12px 24px;
   background-color: #212529;
   color: #ffffff;
-}
-@media screen and (max-width: 767px) {
-  .preserve {
+  @include mobile {
     width: 84.05%;
   }
 }
@@ -93,11 +82,11 @@
 }
 .like-mobile {
   display: none;
-}
-@media screen and (max-width: 767px) {
-  .like-mobile {
+  @include mobile {
     display: block;
   }
+}
+@include mobile {
   .nowrap-col {
     width: 85.47%;
     padding-left: 8px;
