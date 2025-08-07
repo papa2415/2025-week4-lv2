@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>商品列表</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main class="py-xl container m-0a mb-3xl py-m-mobile mb-l-mobile">
+      <ol class="list d-flex mb-xl g-s fw-md mb-s-mobile g-xs-mobile">
+        <li class="neutral-600"><a href="#" class="pr-s pr-xs-mobile ">首頁</a></li>
+        <li class="neutral-600"><a href="#" class="pr-s pr-xs-mobile ">女鞋</a></li>
+        <li>所有商品</li>
+      </ol>
+      <h2 class="h3 mb-xl h4-mobile line-height-48 mb-s-mobile">女鞋</h2>
+      <section class="row">
+        <aside class="col-2 pr-l aside">
+          <ul class="fw-md">
+            <li class="primary py-s mb-m"><a href="#">所有商品</a></li>
+            <li class="py-s mb-m"><a href="#">慢跑鞋</a></li>
+            <li class="py-s mb-m"><a href="#">滑板鞋</a></li>
+            <li class="py-s mb-m"><a href="#">厚底鞋</a></li>
+            <li><a href="#">限定 / 聯名企劃</a></li>
+          </ul>
+        </aside>
+        <div class="col-10">
+          <ul class="row row-mobile card">
+            <li class="col-card-4 col-card-2-mobile">
+              <a href="detail.html">
+                <img src="/assets/images/product.png" alt="鞋" class="mb-s mb-xs-mobile">
+                <h4 class="h6 mb-xxs mb-0-mobile">PLATFORM 404</h4>
+                <p class="fw-md">NT$2,600</p>
+              </a>
+            </li>
+            <li class="col-card-4 col-card-2-mobile">
+              <a href="detail.html">
+                <img src="/assets/images/product-1.png" alt="鞋" class="mb-s mb-xs-mobile">
+                <h4 class="h6 mb-xxs mb-0-mobile">PLATFORM 404</h4>
+                <p class="fw-md">NT$2,600</p>
+              </a>
+            </li>
+            <li class="col-card-4 col-card-2-mobile">
+              <a href="detail.html">
+                <img src="/assets/images/product-2.png" alt="鞋" class="mb-s mb-xs-mobile">
+                <h4 class="h6 mb-xxs mb-0-mobile">VM001</h4>
+                <p class="fw-md">NT$2,600</p>
+              </a>
+            </li>
+            <li class="col-card-4 col-card-2-mobile">
+              <a href="detail.html">
+                <img src="/assets/images/product-3.png" alt="鞋" class="mb-s mb-xs-mobile">
+                <h4 class="h6 mb-xxs mb-0-mobile">Melty Kiss</h4>
+                <p class="fw-md">NT$4,000</p>
+              </a>
+            </li>
+            <li class="col-card-4 col-card-2-mobile">
+              <a href="detail.html">
+                <img src="/assets/images/product-4.png" alt="鞋" class="mb-s mb-xs-mobile">
+                <h4 class="h6 mb-xxs mb-0-mobile">BOOMBLOK</h4>
+                <p class="fw-md">NT$3,200</p>
+              </a>
+            </li>
+            <li class="col-card-4 col-card-2-mobile">
+              <a href="detail.html">
+                <img src="/assets/images/product-5.png" alt="鞋" class="mb-s mb-xs-mobile">
+                <h4 class="h6 mb-xxs mb-0-mobile">BOOMBLOK</h4>
+                <p class="fw-md">NT$3,200</p>
+              </a>
+            </li>
+            <li class="col-card-4 col-card-2-mobile">
+              <a href="detail.html">
+                <img src="/assets/images/product-6.png" alt="鞋" class="mb-s mb-xs-mobile">
+                <h4 class="h6 mb-xxs mb-0-mobile">R:UNER</h4>
+                <p class="fw-md">NT$4,000</p>
+              </a>
+            </li>
+            <li class="col-card-4 col-card-2-mobile">
+              <a href="detail.html">
+                <img src="/assets/images/product-7.png" alt="鞋" class="mb-s mb-xs-mobile">
+                <h4 class="h6 mb-xxs mb-0-mobile">Sugar Snap</h4>
+                <p class="fw-md">NT$4,000</p>
+              </a>
+            </li>
+            <li class="col-card-4 col-card-2-mobile">
+              <a href="detail.html">
+                <img src="/assets/images/product-8.png" alt="鞋" class="mb-s mb-xs-mobile">
+                <h4 class="h6 mb-xxs mb-0-mobile">Neofoam</h4>
+                <p class="fw-md">NT$4,000</p>
+              </a>
+            </li>
+            <li class="col-card-4 col-card-2-mobile">
+              <a href="detail.html">
+                <img src="/assets/images/product-9.png" alt="鞋" class="mb-s mb-xs-mobile">
+                <h4 class="h6 mb-xxs mb-0-mobile">Buttermood</h4>
+                <p class="fw-md">NT$4,000</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="pagination d-flex space-center ">
+            <li class="disabled"><a href="#">&lt;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">&gt;</a></li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

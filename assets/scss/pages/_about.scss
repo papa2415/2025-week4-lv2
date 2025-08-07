@@ -1,0 +1,45 @@
+.banner {
+  background-image: url(/assets/images/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 151px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    background-image: url(/assets/images/hero-sm.png);
+    padding: 87px 0;
+  }
+  .brand-story span {
+    padding-top: 8px;
+    display: block;
+  }
+}
+.BlockQuote {
+  background-color: #f5fee7;
+  border-radius: 12px;
+}
+@media screen and (max-width: 767px) {
+  .BlockQuote {
+    text-align: left;
+  }
+}
+.list-border-left {
+  border-left: 3px solid #dee2e6;
+  padding-left: 12px;
+}
+.story-list a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.story-list i {
+  font-size: 20px;
+}
+.story-list li:hover {
+  color: #477a11;
+}
+.story-list a:hover {
+  color: #477a11;
+}

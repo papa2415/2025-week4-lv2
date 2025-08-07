@@ -1,0 +1,113 @@
+.row-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.col-card-6 {
+  width: 50%;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 8px;
+}
+.card-m {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .card-m {
+    display: block;
+  }
+  .col-card-6 {
+    width: 100%;
+    display: none;
+  }
+}
+.list li::after {
+  content: "/";
+  color: #dee2e6;
+}
+.list li:last-child::after {
+  content: "";
+}
+
+.shoes-color li {
+  max-width: 12.2%;
+}
+@media screen and (max-width: 767px) {
+  .shoes-color li {
+    max-width: 18.23362%;
+  }
+}
+
+.shoes-size a {
+  background-color: #ffffff;
+  width: 30%;
+  padding: 12px 24px;
+  border: 1px solid #dee2e6;
+}
+@media screen and (max-width: 767px) {
+  .shoes-size a {
+    width: 45.584%;
+  }
+}
+.shoes-size a:hover {
+  border: 1px solid #212529;
+}
+.shoes-size .active {
+  border: 1px solid #212529;
+}
+.shoes-size .disabled {
+  opacity: 0.4;
+}
+.like {
+  width: 49%;
+  border: 1px solid #212529;
+  padding: 12px 24px;
+}
+.like:hover {
+  background-color: #212529;
+  color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .like {
+    display: none;
+  }
+}
+.like i {
+  font-size: 20px;
+  padding: 1px 0;
+}
+.preserve {
+  width: 49%;
+  padding: 12px 24px;
+  background-color: #212529;
+  color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .preserve {
+    width: 84.05%;
+  }
+}
+.preserve i {
+  font-size: 20px;
+}
+.like-mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .like-mobile {
+    display: block;
+  }
+  .nowrap-col {
+    width: 85.47%;
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-shrink: 0;
+  }
+  .nowrap-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}

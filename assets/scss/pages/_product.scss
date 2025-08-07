@@ -1,0 +1,50 @@
+.list li::after {
+  content: "/";
+  color: #dee2e6;
+}
+.list li:last-child::after {
+  content: "";
+}
+.pagination {
+  gap: 12px;
+}
+.pagination li a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+.pagination li a:hover {
+  background-color: #f8f9fa;
+}
+.pagination .active {
+  background-color: #c0fa73;
+}
+.pagination .disabled {
+  opacity: 0.4;
+}
+.line-height-48 {
+  line-height: 48px;
+}
+.card li:last-child {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .card li:last-child {
+    display: block;
+  }
+}
+.col-card-4 {
+  width: 33.33333%;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 767px) {
+  .col-card-2-mobile {
+    width: 50%;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 24px;
+  }
+}
